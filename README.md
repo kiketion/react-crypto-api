@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React Crypto API
+
+This project is created using the CoinGecko API with Axios Library.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
