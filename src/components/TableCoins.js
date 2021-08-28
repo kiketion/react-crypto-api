@@ -1,4 +1,5 @@
-import Reac from 'react';
+import React from 'react';
+import CoinRow from './CoinRow';
 
 const TableCoins = ({ coins }) => {
   return (
@@ -9,10 +10,8 @@ const TableCoins = ({ coins }) => {
         </tr>
       </thread>
       <tbody>
-        {coins.map((coin) => (
-          <tr key={coin.name}>
-            <td>{coin.name}</td>
-          </tr>
+        {coins.map((coin, index) => (
+          <CoinRow coin={coin} key={index} />
         ))}
       </tbody>
     </table>
