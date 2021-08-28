@@ -2,7 +2,7 @@ import Reac from 'react';
 
 const TableCoins = ({ coins }) => {
   return (
-    <table>
+    <table className='table table-dark mt-4 table-hover'>
       <thread>
         <tr>
           <td>name</td>
@@ -10,7 +10,9 @@ const TableCoins = ({ coins }) => {
       </thread>
       <tbody>
         {coins.map((coin) => (
-          <tr>{coin.name}</tr>
+          <tr key={coin.name}>
+            <td>{coin.name}</td>
+          </tr>
         ))}
       </tbody>
     </table>

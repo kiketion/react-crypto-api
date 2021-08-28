@@ -18,9 +18,16 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
-      <h1>ReactCryptoAPI</h1>
-      <TableCoins coins={coins} />
+    <div className='container'>
+      <div className='row'>
+        <h1>React Crypto Prices</h1>
+        <p>
+          This is a List of the Most Important Crypto Coins an teheir current
+          prices. it`s created in React.js, proyected in Vercel and work by usin
+          an API provided by CoinGecko.
+        </p>
+        <TableCoins coins={coins} />
+      </div>
     </div>
   );
 }
