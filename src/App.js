@@ -5,6 +5,7 @@ import TableCoins from './components/TableCoins';
 
 function App() {
   const [coins, setCoins] = useState([]);
+  const [search, setSearch] = useState('');
 
   const getData = async () => {
     const res = await axios.get(
@@ -26,7 +27,13 @@ function App() {
           prices. it`s created in React.js, proyected in Vercel and work by usin
           an API provided by CoinGecko.
         </p>
-        <TableCoins coins={coins} />
+        <input
+          type='text'
+          placeholder='Search a Coin'
+          className='form-control bg-dark text-light border-0 mt-04 text-center'
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <TableCoins coins={coins} search={search} />
       </div>
     </div>
   );
