@@ -2,6 +2,8 @@
 
 This project is created using the CoinGecko API with Axios Library.
 
+![ React-Crypto-API](/IMG_0706.jpeg "React-Crypto-API")
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
