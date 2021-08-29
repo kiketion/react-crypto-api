@@ -1,6 +1,6 @@
 # React Crypto API
 
-This project is created using the CoinGecko API with Axios Library.
+This project is created using the CoinGecko API with Axios Library, and deployed in Vercel. You can see a demo here => http://react-crypto-api.vercel.app
 
 ![ React-Crypto-API](/IMG_0706.jpeg "React-Crypto-API")
 
