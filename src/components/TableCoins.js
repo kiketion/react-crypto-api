@@ -6,13 +6,13 @@ const titles = ['#', 'Coin', 'Price', 'Price Change', '24h Volume'];
 const TableCoins = ({ coins }) => {
   return (
     <table className='table table-dark mt-4 table-hover'>
-      <thread>
+      <thead>
         <tr>
           {titles.map((title) => (
             <td>{title}</td>
           ))}
         </tr>
-      </thread>
+      </thead>
       <tbody>
         {coins.map((coin, index) => (
           <CoinRow coin={coin} key={index} index={index + 1} />
